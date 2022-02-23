@@ -1,0 +1,35 @@
+<h2 class="title text-center m-5">Product Details</h2>
+
+<div class="container d-flex justify-content-center">
+    <div class="card mb-3" style="max-width: 700px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{product.img}}" class="img-fluid rounded-start" alt="pic">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">{{product.name}}</h3>
+              <p class="card-text">{{product.description}}</p>
+              <hr>
+              <h5>Price: {{product.price | currency:"EUR"}}</h5>
+              <hr>
+              <div class="btn btn-primary" (click)="addToCart(); countClick()">Add to Cart</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="bg-light mt-5 d-flex justify-content-center flex-wrap">
+    <div class="p-5"><img src="assets/img/14.jpg" alt="pic"></div>
+    <div class="pt-5" style="max-width: 450px;">
+    <h3 class="title">Question?</h3>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, accusamus!</p>
+    <br>
+    <br>
+    <p>Address: Favoritengasse 15, 1100 Wien</p>
+    <p>Tel.: +43 606-5296-23-22</p>
+    <p>Email: restaurant@home.com</p>
+    </div>
+</div>
